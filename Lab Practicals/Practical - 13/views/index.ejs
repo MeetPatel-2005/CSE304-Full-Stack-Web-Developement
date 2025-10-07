@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Total Income Calculator</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1>Total Income Calculator</h1>
+
+      <% if (error) { %>
+        <div class="alert error"><%= error %></div>
+      <% } %>
+
+      <% if (result) { %>
+        <div class="alert success"><%= result %></div>
+      <% } %>
+
+      <form action="/calculate" method="POST" class="form">
+        <div class="form-group">
+          <label for="income1">Income Source 1</label>
+          <input type="text" id="income1" name="income1" placeholder="Enter amount" required>
+        </div>
+
+        <div class="form-group">
+          <label for="income2">Income Source 2</label>
+          <input type="text" id="income2" name="income2" placeholder="Enter amount" required>
+        </div>
+
+        <button type="submit">Calculate</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
+.main-container {
+    height: 35%;
+    width: 25%;
+    border: 2px solid black;
+    color: white;
+    background-color: #02172C;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.title {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    height: 200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.main-content p {
+    font-size: 1.5rem;
+}
+
+.buttons button {
+    font-size: 2rem;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.buttons .add-button {
+    color: white;
+    background-color: green;
+}
+
+.buttons .subtract-button {
+    color: white;
+    background-color: red;
+}
+
+.reset-button {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-button button {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#count-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0A3D62;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid #00d2d3;
+    box-shadow: 0 0 10px rgba(0, 210, 211, 0.6);
+    text-align: center;
+    min-width: 60px;
+}

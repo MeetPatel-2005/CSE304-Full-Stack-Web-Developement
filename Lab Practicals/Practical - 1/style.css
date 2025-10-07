@@ -1,0 +1,41 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: larger;
+}
+
+.main-container {
+    height: 40rem;
+    width: 70rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    margin: 2rem 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.vote-buttons {
+    padding: 1rem 1.5rem;
+}
+
+.voting-results {
+    text-align: center;
+    line-height: 2rem;
+}

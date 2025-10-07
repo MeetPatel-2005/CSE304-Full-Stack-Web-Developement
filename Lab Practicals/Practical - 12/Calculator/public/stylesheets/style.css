@@ -1,0 +1,110 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(135deg, #FFD194, #6A82FB);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container for calculator */
+.calculator-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading */
+.calculator-container h1 {
+    color: #ff6b81;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffe066;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input fields */
+input[type="text"], select {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #6A82FB;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #ff6b81;
+    box-shadow: 0 0 10px rgba(255, 107, 129, 0.4);
+}
+
+/* Button */
+button {
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #6A82FB, #FFD194);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Result display */
+#result {
+    margin-top: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6A82FB;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#result.error {
+    color: #ff4d4d;
+    background-color: rgba(255, 200, 200, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+    .calculator-container {
+        padding: 20px;
+    }
+
+    input, select, button {
+        font-size: 1rem;
+    }
+
+    #result {
+        font-size: 1.5rem;
+    }
+}
