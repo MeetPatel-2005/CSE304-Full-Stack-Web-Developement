@@ -123,5 +123,3 @@ npm run dev
 
 **Meet Patel**
 🎓 CHARUSAT University | CSE304 – Full Stack Web Development
-📦 Repository: [CSE304-Full-Stack-Web-Developement](https://github.com/MeetPatel-2005/CSE304-Full-Stack-Web-Developement)
-
